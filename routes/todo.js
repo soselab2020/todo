@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const router = express.Router();
 
 // 連接到 MongoDB 資料庫
-mongoose.connect('mongodb://localhost:27017/tododb');
-// mongoose.connect('mongodb+srv://admin:admin6631@cluster0.em8n9ep.mongodb.net/?retryWrites=true&w=majority'); // 連結雲端Atlas
+// mongoose.connect('mongodb://localhost:27017/tododb');
+mongoose.connect('mongodb+srv://admin:admin6631@cluster0.em8n9ep.mongodb.net/?retryWrites=true&w=majority'); // 連結雲端Atlas
 const db = mongoose.connection;
 
 // 與資料庫連線發生錯誤時
